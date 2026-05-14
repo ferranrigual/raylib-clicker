@@ -1,6 +1,6 @@
 import pyray as rl
 import math
-import time
+import os
 
 # --- Game Data ---
 
@@ -118,7 +118,14 @@ def pollution_color(p):
 def main():
     W, H = 900, 650
     rl.init_window(W, H, "Energy Clicker")
+    rl.init_audio_device()
     rl.set_target_fps(60)
+
+    # Load and play ambient music
+    music_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "ambient.mp3")
+    music = rl.load_music_stream(music_path)
+    rl.set_music_volume(music, 0.5)
+    rl.play_music_stream(music)
 
     game = Game()
 
@@ -131,6 +138,7 @@ def main():
     row_h = 72
 
     while not rl.window_should_close():
+        rl.update_music_stream(music)
         dt = rl.get_frame_time()
         game.update(dt)
         mx, my = rl.get_mouse_x(), rl.get_mouse_y()
@@ -296,6 +304,8 @@ def main():
 
         rl.end_drawing()
 
+    rl.unload_music_stream(music)
+    rl.close_audio_device()
     rl.close_window()
 
 

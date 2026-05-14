@@ -48,3 +48,7 @@ python main.py
 ```
 
 Requires Python 3.8+ and a desktop environment with OpenGL support.
+
+## Credits
+
+- **Ambient Music**: "Mysterious Ambience (song21)" by [pixelsphere.org](https://pixelsphere.org) — [OpenGameArt](https://opengameart.org/content/mysterious-ambience-song21) (CC0 / Public Domain)
