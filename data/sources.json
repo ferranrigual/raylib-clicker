@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Coal Plant",
+    "base_cost": 10,
+    "base_eps": 1,
+    "pollution": 10,
+    "unlock": 0,
+    "color": [80, 80, 80]
+  },
+  {
+    "name": "Oil Rig",
+    "base_cost": 100,
+    "base_eps": 5,
+    "pollution": 8,
+    "unlock": 50,
+    "color": [40, 40, 40]
+  },
+  {
+    "name": "Natural Gas",
+    "base_cost": 500,
+    "base_eps": 20,
+    "pollution": 5,
+    "unlock": 300,
+    "color": [100, 140, 180]
+  },
+  {
+    "name": "Solar Farm",
+    "base_cost": 2000,
+    "base_eps": 60,
+    "pollution": 1,
+    "unlock": 1500,
+    "color": [255, 200, 50]
+  },
+  {
+    "name": "Wind Turbine",
+    "base_cost": 8000,
+    "base_eps": 150,
+    "pollution": 1,
+    "unlock": 6000,
+    "color": [180, 220, 255]
+  },
+  {
+    "name": "Hydroelectric",
+    "base_cost": 30000,
+    "base_eps": 400,
+    "pollution": 2,
+    "unlock": 25000,
+    "color": [50, 120, 200]
+  },
+  {
+    "name": "Nuclear Fission",
+    "base_cost": 100000,
+    "base_eps": 1200,
+    "pollution": 3,
+    "unlock": 80000,
+    "color": [0, 200, 100]
+  },
+  {
+    "name": "Nuclear Fusion",
+    "base_cost": 500000,
+    "base_eps": 5000,
+    "pollution": 0,
+    "unlock": 400000,
+    "color": [0, 255, 220]
+  }
+]

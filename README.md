@@ -40,6 +40,25 @@ Diversify into renewables and watch your pollution drop.
 
 Build an energy empire that's both powerful and clean. The ultimate achievement is running entirely on Nuclear Fusion with zero pollution.
 
+## Project Structure
+
+```
+raylib_clicker/
+├── main.py              # Entry point: window, audio, input, game loop
+├── game.py              # Game state and logic (no graphics dependencies)
+├── draw.py              # All rendering code (raylib drawing functions)
+├── data/
+│   └── sources.json     # Energy source definitions (balance, costs, pollution)
+├── assets/
+│   └── ambient.mp3      # Background music
+├── screenshot.py        # Utility to generate README screenshots
+└── screenshots/         # README images
+```
+
+- **`game.py`** is fully independent of raylib — pure Python game logic that could be reused with any renderer
+- **`draw.py`** handles all rendering and layout constants
+- **`data/sources.json`** lets you tweak game balance (add sources, change costs/pollution) without touching code
+
 ## Install & Run
 
 ```bash
